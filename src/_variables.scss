@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Druk';
-  src: url('../public/fonts/Druk/DrukWideCyr-Bold.woff2') format('woff2'),
-  url('../public/fonts/Druk/DrukWideCyr-Bold.woff') format('woff');
+  src: url('/fonts/Druk/DrukWideCyr-Bold.woff2') format('woff2'),
+  url('/fonts/Druk/DrukWideCyr-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Commissioner';
-  src: url('../public/fonts/Commissioner/Commissioner-Bold.woff2') format('woff2'),
-  url('../public/fonts/Commissioner/Commissioner-Bold.woff') format('woff');
+  src: url('/fonts/Commissioner/Commissioner-Bold.woff2') format('woff2'),
+  url('/fonts/Commissioner/Commissioner-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Commissioner';
-  src: url('../public/fonts/Commissioner/Commissioner-Regular.woff2') format('woff2'),
-  url('../public/fonts/Commissioner/Commissioner-Regular.woff') format('woff');
+  src: url('/fonts/Commissioner/Commissioner-Regular.woff2') format('woff2'),
+  url('/fonts/Commissioner/Commissioner-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
