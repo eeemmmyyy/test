@@ -1,0 +1,51 @@
+@import 'base';
+@import 'variables';
+// Шапка
+.header {
+  padding: 14px 20px;
+  margin-top: 20px !important;
+  font-family: var(--font-primary);
+  background: var(--background-primary);
+  border-radius: var(--border-radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.header__a {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.header__right-block{
+  display: flex;
+  gap: 6px;
+}
+
+.header__menu {
+  padding: 7px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header__profile {
+  gap: 10px;
+  display: flex;
+  padding: 3px 3px 3px 16px;
+  background: var(--gray-light);
+  border-radius: var(--border-radius-base);
+  align-items: center;
+}

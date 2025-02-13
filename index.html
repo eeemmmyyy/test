@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/main.scss">
+   
 </head>
 <body>
-    
+<header class="header container">
+    <nav class="header__nav">
+        <a href="#">
+            <img class="header__logo" src="./public/images/xpage.svg" alt="logotype">
+        </a>
+        <ul class="header__ul">
+            <li class="header__li"><a class="header__a" href="#">Играть</a></li>
+            <li class="header__li"><a class="header__a" href="#">Смотреть</a></li>
+            <li class="header__li"><a class="header__a" href="#">Учиться</a></li>
+            <li class="header__li"><a class="header__a" href="#">Мероприятия</a></li>
+        </ul>
+    </nav>
+    <div class="header__right-block">
+        <div class="header__menu">
+            <img class="header__burger-menu" src="./public/images/menu.svg" alt="menu">
+            <span class="header__text">МЕНЮ</span>
+        </div>
+        <div class="header__profile">
+            <span class="header__name">Геннадий П.</span>
+            <img class="header__photo" src="./public/images/user.svg" alt="user">
+        </div>
+    </div>
+</header>
+
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

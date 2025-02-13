@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Druk';
+  src: url('../public/fonts/Druk/DrukWideCyr-Bold.woff2') format('woff2'),
+  url('../public/fonts/Druk/DrukWideCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../public/fonts/Commissioner/Commissioner-Bold.woff2') format('woff2'),
+  url('../public/fonts/Commissioner/Commissioner-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../public/fonts/Commissioner/Commissioner-Regular.woff2') format('woff2'),
+  url('../public/fonts/Commissioner/Commissioner-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Основные цвета */
+  --primary-color: #F36722;
+  --secondary-color: #2E8D43;
+
+  /* Нейтральные цвета */
+  --white: #ffffff;
+  --black: #202020;
+  --gray: #ECECEC;
+  --gray-light: #EFEFEF;
+  --gray-dark: #333333;
+
+  /* Цвета текста */
+  --text-primary: var(--black);
+  --text-secondary: var(--white);
+
+  /* Цвета фона */
+  --background-primary: var(--white);
+  --background-secondary: var(--gray);
+  --background-hover: var(--primary-color);
+
+  /* Шрифты */
+  --line-height-base: 1.5;
+  --font-primary: 'Druk', sans-serif;
+  --font-secondary: 'Commissioner', serif;
+  /* Прочие переменные */
+  --border-radius-base: 20px;
+}
