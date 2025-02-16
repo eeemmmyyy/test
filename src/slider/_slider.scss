@@ -1,0 +1,126 @@
+// Слайдер
+.slider {
+
+  &__swiper {
+    border-radius: var(--border-radius-base);
+    margin-top: 8px;
+  }
+
+  &__wrapper {
+    height: 830px !important;
+  }
+
+  &__wrapper &__slide:nth-child(1) {
+    background-image: url('/images/3.webp');
+  }
+
+  &__wrapper &__slide:nth-child(2) {
+    background-image: url('/images/2.webp');
+  }
+
+  &__wrapper &__slide:nth-child(3) {
+    background-image: url('/images/1.webp');
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    right: 0;
+    left: 0;
+    padding: 0 20px;
+    gap: 8px;
+    z-index: 2;
+  }
+
+  &__slide {
+    background-size: cover;
+  }
+
+  &__slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(32, 32, 32, 0.1);
+    z-index: 1;
+  }
+
+  &__text {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 66px;
+    color: var(--text-secondary);
+    width: 90%;
+    z-index: 2;
+  }
+
+  &__button {
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    flex: 1;
+    padding: 20px 24px;
+    background: var(--background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button:hover {
+    color: var(--text-secondary);
+    background: var(--background-hover);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .slider {
+
+    &__wrapper &__slide:nth-child(1) {
+      background-image: url('/images/3-mobile.webp');
+    }
+
+    &__wrapper &__slide:nth-child(2) {
+      background-image: url('/images/2-mobile.webp');
+    }
+
+    &__wrapper &__slide:nth-child(3) {
+      background-image: url('/images/1-mobile.webp');
+    }
+
+    &__buttons {
+      flex-direction: column;
+      padding: 0 12px;
+
+    }
+
+    &__button {
+      padding: 10px 14px;
+      border-radius: var(--border-radius-base-mobile);
+    }
+
+    &__swiper {
+      border-radius: var(--border-radius-base-mobile);
+    }
+
+    &__text {
+      bottom: 152px;
+      width: 270px;
+      padding: 0 12px;
+    }
+
+    &__slide {
+      background-size: cover;
+      background-repeat: no-repeat
+    }
+
+    &__wrapper {
+      height: 516px !important;
+    }
+  }
+}

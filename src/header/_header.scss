@@ -1,0 +1,124 @@
+// Шапка
+.header {
+  padding: 14px 20px;
+  margin-top: 20px !important;
+  background: var(--background-primary);
+  border-radius: var(--border-radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-primary);
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__burger-menu {
+    display: none;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+  }
+
+  &__a {
+    color: var(--text-primary);
+  }
+
+  &__right-block {
+    display: flex;
+    gap: 6px;
+  }
+
+  &__menu {
+    padding: 7px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__profile {
+    gap: 10px;
+    display: flex;
+    padding: 3px 3px 3px 16px;
+    background: var(--gray-light);
+    border-radius: var(--border-radius-base);
+    align-items: center;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+    background: var(--background-primary);
+    position: absolute;
+    top: 85px;
+    left: 0;
+    z-index: 3;
+    border-radius: 0 0 var(--border-radius-base-mobile) var(--border-radius-base-mobile);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    opacity: 1;
+    padding-left: 70px;
+    transform: translateY(0);
+  }
+
+  .mobile-menu &__li {
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+  }
+
+  .mobile-menu &__li:hover {
+    background-color: var(--gray-light);
+  }
+
+  .mobile-menu &__a {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+
+  .mobile-menu &__a:hover {
+    color: var(--text-secondary);
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    border-radius: var(--border-radius-base-mobile);
+    padding: 8px 12px;
+
+    &__logo {
+      margin: 0 auto;
+    }
+
+    &__menu, .desktop-menu, &__name {
+      display: none;
+    }
+
+    &__profile {
+      padding: 0;
+    }
+
+    &__nav {
+      gap: 55px
+    }
+
+    &__burger-menu {
+      display: block;
+    }
+    .mobile-menu{
+      margin: 0 12px;
+    }
+  }
+}

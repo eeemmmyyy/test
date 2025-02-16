@@ -5,6 +5,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Commissioner';
   src: url('/fonts/Commissioner/Commissioner-Bold.woff2') format('woff2'),
@@ -12,6 +13,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Commissioner';
   src: url('/fonts/Commissioner/Commissioner-Regular.woff2') format('woff2'),
@@ -21,30 +23,40 @@
 }
 
 :root {
-  /* Основные цвета */
+  // Основные цвета
   --primary-color: #F36722;
   --secondary-color: #2E8D43;
+  --accent-color: #e74c3c;
 
-  /* Нейтральные цвета */
+  // Нейтральные цвета
   --white: #ffffff;
   --black: #202020;
   --gray: #ECECEC;
   --gray-light: #EFEFEF;
   --gray-dark: #333333;
+  --gray-other: #747474;
 
-  /* Цвета текста */
+  // Цвета текста
   --text-primary: var(--black);
   --text-secondary: var(--white);
 
-  /* Цвета фона */
+  // Цвета фона
   --background-primary: var(--white);
   --background-secondary: var(--gray);
   --background-hover: var(--primary-color);
 
-  /* Шрифты */
+  // Шрифты
   --line-height-base: 1.5;
   --font-primary: 'Druk', sans-serif;
   --font-secondary: 'Commissioner', serif;
-  /* Прочие переменные */
+
+  // Прочие переменные
   --border-radius-base: 20px;
+  --border-radius-base-mobile: 10px;
+  --border-radius-a: 38px;
+  --border-radius-qr: 29px;
+  --border-radius-block: 14px;
+  --primary-color-divider: #C4C4C4;
+  --secondary-color-divider: var(--black);
+
 }

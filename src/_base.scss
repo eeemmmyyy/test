@@ -1,38 +1,80 @@
-body{
-  box-sizing: border-box;
+@use 'variables';
+@use 'header/header';
+@use 'slider/slider';
+@use 'play/play';
+@use 'study/study';
+@use 'footer/footer';
+@use 'reset';
+
+body {
   margin: 0;
-  padding: 0;
   background: var(--background-secondary);
+  font-family: var(--font-primary);
 }
 
 .container {
   margin: 0 20px;
+  @media (max-width: 1300px) {
+    margin: 0 12px;
+  }
 }
 
 h1 {
-  font-size: 5rem; /* Размер шрифта 80px */
+  font-size: 5em; /* Размер шрифта 80px */
   text-transform: uppercase;
+  @media (max-width: 1000px) {
+    font-size: 2.7em; /* Размер шрифта 26px */
+  }
+  @media (max-width: 768px) {
+    font-size: 1.625em; /* Размер шрифта 26px */
+
+  }
 }
 
 h2 {
-  font-size: 3rem; /* Размер шрифта 48px */
+  font-size: 3em; /* Размер шрифта 48px */
+  text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 1.25em; /* Размер шрифта 20px */
+  }
 }
 
 h3 {
-  font-size: 2.29rem; /* Размер шрифта 32px */
+  font-size: 2em; /* Размер шрифта 32px */
   text-transform: uppercase;
-
+  @media (max-width: 1300px) {
+    font-size: 1.25em; /* Размер шрифта 20px */
+  }
 }
 
-h4 {
-  font-size: 1.43rem; /* Размер шрифта 20px */
+p {
+  font-size: 1em; /* Размер шрифта 16px */
+  font-family: var(--font-secondary);
+  @media (max-width: 768px) {
+    font-size: 0.875em; /* Размер шрифта 14px */
+  }
 }
 
-p, button, span {
+button, span {
   font-size: 1em; /* Размер шрифта 16px */
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 0.875em; /* Размер шрифта 14px */
+  }
 }
-a, li, h6{
-  font-size: 0.875rem; /* Размер шрифта 14px */
+
+button {
+  font-family: var(--font-primary);
+}
+
+a, h4 {
+  font-size: 0.875em; /* Размер шрифта 14px */
   text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+small {
+  font-size: 0.75em; /* Размер шрифта 12px */
+  text-transform: uppercase;
 }

@@ -1,0 +1,145 @@
+// Играй
+.play {
+  margin-top: 120px !important;
+
+
+  &__title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  &__button {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  &__cards {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  &__card {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    background: var(--background-primary);
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+
+  &__card:hover {
+    background: var(--black);
+  }
+
+  &__card:hover &__card-info {
+    color: var(--text-secondary);
+  }
+
+  &__card-img {
+    border-radius: var(--border-radius-base);
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+
+  &__card:nth-child(2) &__card-img {
+    width: 75%;
+  }
+
+  &__card:nth-child(2) {
+    align-items: flex-end;
+  }
+
+  &__card-info {
+    padding: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  &__card-title {
+    width: 60%;
+  }
+
+  &__card-text {
+    width: 70%;
+  }
+
+  &__card-button {
+    position: absolute;
+    bottom: -60px;
+    left: 24px;
+    right: 24px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border-radius: 20px;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+  }
+
+  &__card:hover &__card-img,
+  &__card:hover &__card-info {
+    transform: translateY(-120px);
+  }
+
+  &__card:hover &__card-button {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .play {
+    margin-top: 42px !important;
+
+    &__cards {
+      grid-template-columns: 1fr;
+      margin-top: 21px;
+
+    }
+
+    &__button {
+      font-size: 0.875em;
+      margin-bottom: 0;
+    }
+
+    &__button svg {
+      display: none;
+    }
+
+    &__title {
+      align-items: flex-end;
+    }
+
+    &__card-title {
+      width: 75%;
+    }
+
+    &__card-text {
+      width: 85%;
+    }
+
+    &__card-info {
+      padding: 12px;
+    }
+  }
+}
